@@ -73,7 +73,9 @@
 		height: 480px !important;
 	}
 	.swiper,.swiper-container{
-		overflow: visible !important;
+		@include respond-to(large) {
+			overflow: visible !important;
+		}	
 	}
 }
 .swiper_body{

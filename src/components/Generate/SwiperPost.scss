@@ -22,7 +22,9 @@
 		right: 120px;
 	}
 	.swiper,.swiper-container{
-		overflow: visible !important;
+		@include respond-to(large) {
+			overflow: visible !important;
+		}	
 	}
 	.swiperPost_title{
 		display: flex;
