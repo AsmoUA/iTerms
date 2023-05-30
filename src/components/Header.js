@@ -96,6 +96,7 @@ const Header = () => {
         <Route path="/blog/:id" element={<BlogDetail navigate = {navigate} />}/>
         <Route path="/sign_up" element={<SignUp onSignUp={handleSignUp} navigate = {navigate}/>}/>
         <Route path="/sign_in" element={<SignIn onSignIn={handleSignIn} navigate = {navigate}/>} />
+        <Route path="/iTerms/" element={<Generate />} />
         <Route path="*" element={<PageNotFound />}/>
       </Routes>
     </>
