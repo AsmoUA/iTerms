@@ -1,7 +1,9 @@
 @import '../../mixins/mixins.scss';
 @import '../../globals/globals.scss';
 
-
+.main{
+	overflow: hidden;
+}
 .main_background {
 	position: relative;
 	max-width:1920px;
@@ -158,9 +160,13 @@
 		position: absolute;
 		width: 300px;
 		height: 300px;
-		top: 300px;
-		right: -90px;
+		top: 382px;
+    right: -26%;
 		z-index: 2;
+		@include respond-to(medium){
+			top: 393px;
+    	right: 11%;
+		}
 	}
 	.main_cardPricing_cardCircle_small{
 		display: inline-block;
@@ -859,6 +865,7 @@
 		display: block;
 		position: relative;
 		height: 900px;
+		overflow: visible;
 		.main_cardPricing_cardCircle_small{
 			display: none;
 		}

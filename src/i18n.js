@@ -11,7 +11,7 @@ const resources = {
       'header-logIn':'Log in',
       'header-signUp': 'Sign Up',
       'log_out': 'Log out',
-      // 'account-open' : 'Account',
+      'account-open' : 'Account',
       // for Generate
       'generate-tutorial-text':'The smartest, fastest way to Legal Aggrements',
       'streamline-name':'Streamline Your Purpose with AI',
@@ -57,19 +57,6 @@ const resources = {
       'Frequent_Updates': 'Frequent Updates',
       'Law_Compatible': ' Law Compatible',
       'Formats': ' Formats',
-      
-
-
-
-
-
-
-
-
-
-
-
-
       // for Blog
       'latest':'Keep Up With the Latest',
       'discover_new':'Discover What’s New',
@@ -280,7 +267,7 @@ const resources = {
       'header-logIn':'Увійти',
       'header-signUp': 'Зареєструватися',
       'log_out': 'Вийти',
-      // 'account-open' : 'Аккаунт',
+      'account-open' : 'Аккаунт',
       //for Generate
       'generate-tutorial-text':'Швидший шлях до юридичних угод',
       'streamline-name':'Оптимізуй мету за допомогою ШІ',
@@ -326,18 +313,6 @@ const resources = {
       'Frequent_Updates': 'Часті Оновлення',
       'Law_Compatible': ' Закон Сумісний',
       'Formats': ' Формати',
-      
-
-
-
-
-
-
-
-
-
-
-
       // for Blog
       'latest': 'Будьте в курсі останніх новин',
       'discover_new':'Дізнайтеся про новинки',
