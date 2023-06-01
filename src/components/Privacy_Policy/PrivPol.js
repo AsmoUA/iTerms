@@ -6,14 +6,16 @@ import PriPolGuarantee from './PriPolGuarantee';
 import PriPolBlog from './PriPolBlog';
 import './PrivPol.scss';
 import { useTranslation } from 'react-i18next';
-
 import { Link } from 'react-router-dom';
 
 const PrivPol = () => {
+
   const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   return (
     <>
       <div className="body">
@@ -27,8 +29,12 @@ const PrivPol = () => {
           <Link to="/" className="header_button_home_1">{t('privacy_home')}</Link>
         </div>
         <div className="header_button_details">
-          <Link to="/" className="header_button_details_1">{t('privacy_generate')}</Link>
-          <Link to="/pricing" className="header_button_details_2">{t('privacy_learn')}</Link>
+          <Link to="/" className="header_button_details_1">
+            {t('privacy_generate')}
+          </Link>
+          <Link to="/pricing" className="header_button_details_2">
+            {t('privacy_learn')}
+          </Link>
         </div>
         <PriPolAdvant/>
         <PriPolOnline/>

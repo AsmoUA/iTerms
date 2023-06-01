@@ -9,7 +9,6 @@ import './SignUp.scss';
 
 const SignUp = ({ onSignUp, navigate }) => {
   const { t } = useTranslation();
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -49,9 +48,11 @@ const SignUp = ({ onSignUp, navigate }) => {
       navigate('/');
     } 
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="sign_up_container">
       <div className="form_container">
@@ -98,22 +99,34 @@ const SignUp = ({ onSignUp, navigate }) => {
           </form>
 
           <p className="text_for_servces_policy"> {t('i_agree')}{' '}
-            <Link to={'/privacy'}>{t('terms_of_service')}</Link>{' '}
-            <Link to={'/privacy'}>{t('privacy_policy')}</Link>
+            <Link to={'/privacy'}>
+              {t('terms_of_service')}
+            </Link>{' '}
+            <Link to={'/privacy'}>
+              {t('privacy_policy')}
+            </Link>
           </p>
-
-          <button id = "create_account" onClick={handleSubmit}>{t('create_account')}</button>
-
+          <button id="create_account" onClick={handleSubmit}>
+            {t('create_account')}
+          </button>
           <div className="sign_up_with">
             <h3>{t('sign_in_with')}</h3>
             <div className="sign_up_with_but">
-              <button><img className="for_pc_sign_up" src={googleimg}  /><img className="for_tab_sign_up" src={googleTabl}  />Google</button>
-              <button><img className="for_pc_sign_up" src={facebookimg} /><img className="for_tab_sign_up" src={facebookTabl} />Facebook</button>
+              <button>
+                <img className="for_pc_sign_up" src={googleimg} />
+                <img className="for_tab_sign_up" src={googleTabl} />
+                Google
+              </button>
+              <button>
+                <img className="for_pc_sign_up" src={facebookimg} />
+                <img className="for_tab_sign_up" src={facebookTabl} />
+                Facebook
+              </button>
             </div>
           </div>
-
           <p className="link_text_for_log_in"> 
-            {t('have_account')} <Link to={'/sign_in'}>{t('sign_in')}</Link>
+            {t('have_account')}
+            <Link to={'/sign_in'}>{t('sign_in')}</Link>
           </p>
         </div>
       </div>

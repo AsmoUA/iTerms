@@ -5,7 +5,9 @@ import { useTranslation } from 'react-i18next';
 import './PriPolOnline.scss';
 
 const PriPolOnline = () => {
+
   const { t } = useTranslation();
+  
   return (
     <>
       <div className="details_online">

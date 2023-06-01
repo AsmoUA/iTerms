@@ -30,6 +30,7 @@ const PriPolGuarantee = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  
   return (
     <>
       <div className="details_protection_background" style={{ backgroundImage: `url(${background})` }}>

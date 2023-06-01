@@ -15,7 +15,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const PriPolSwiper = () => {
+
   const { t } = useTranslation();
+
   return (
     <>
       <div className="swiper_title">
@@ -46,43 +48,67 @@ const PriPolSwiper = () => {
               <img src={img1}></img>
               <h5>{t('privacy_swiper_privacy')}</h5>
               <p>{t('privacy_swiper_statement')}</p>
-              <Link to="/" className="generate">{t('privacy_swiper_generate')}</Link>
-              <Link to="/pricing" className="learn_more">{t('privacy_swiper_learn')}</Link>
+              <Link to="/" className="generate">
+                {t('privacy_swiper_generate')}
+              </Link>
+              <Link to="/pricing" className="learn_more">
+                {t('privacy_swiper_learn')}
+              </Link>
             </div></SwiperSlide>
             <SwiperSlide className="swiper_slide"><div>
               <img src={img2}></img>
               <h5>{t('privacy_swiper_terms')}</h5>
               <p>{t('privacy_swiper_legal')}</p>
-              <Link to="/" className="generate">{t('privacy_swiper_generate')}</Link>
-              <Link to="/pricing" className="learn_more">{t('privacy_swiper_learn')}</Link>
+              <Link to="/" className="generate">
+                {t('privacy_swiper_generate')}
+              </Link>
+              <Link to="/pricing" className="learn_more">
+                {t('privacy_swiper_learn')}
+              </Link>
             </div></SwiperSlide>
             <SwiperSlide className="swiper_slide"><div>
               <img src={img3}></img>
               <h5>{t('privacy_swiper_cookie')}</h5>
               <p>{t('privacy_swiper_legal')}</p>
-              <Link to="/" className="generate">{t('privacy_swiper_generate')}</Link>
-              <Link to="/pricing" className="learn_more">{t('privacy_swiper_learn')}</Link>
+              <Link to="/" className="generate">
+                {t('privacy_swiper_generate')}
+              </Link>
+              <Link to="/pricing" className="learn_more">
+                {t('privacy_swiper_learn')}
+              </Link>
             </div></SwiperSlide>
             <SwiperSlide className="swiper_slide"><div>
               <img src={img4}></img>
               <h5>Eula</h5>
               <p>{t('privacy_swiper_legal')}</p>
-              <Link to="/" className="generate">{t('privacy_swiper_generate')}</Link>
-              <Link to="/pricing" className="learn_more">{t('privacy_swiper_learn')}</Link>
+              <Link to="/" className="generate">
+                {t('privacy_swiper_generate')}
+              </Link>
+              <Link to="/pricing" className="learn_more">
+                {t('privacy_swiper_learn')}
+              </Link>
             </div></SwiperSlide>
             <SwiperSlide className="swiper_slide"><div>
               <img src={img5}></img>
               <h5>{t('privacy_swiper_disclaimer')}</h5>
               <p>{t('privacy_swiper_legal')}</p>
-              <Link to="/" className="generate">{t('privacy_swiper_generate')}</Link>
-              <Link to="/pricing" className="learn_more">{t('privacy_swiper_learn')}</Link>
+              <Link to="/" className="generate">
+                {t('privacy_swiper_generate')}
+              </Link>
+              <Link to="/pricing" className="learn_more">
+                {t('privacy_swiper_learn')}
+              </Link>
             </div></SwiperSlide>
             <SwiperSlide className="swiper_slide"><div>
               <img src={img6}></img>
               <h5>{t('privacy_swiper_refund')}</h5>
               <p>{t('privacy_swiper_legal')}</p>
-              <Link to="/" className="generate">{t('privacy_swiper_generate')}</Link>
-              <Link to="/pricing" className="learn_more">{t('privacy_swiper_learn')}</Link>
+              <Link to="/" className="generate">
+                {t('privacy_swiper_generate')}
+              </Link>
+              <Link to="/pricing" className="learn_more">
+                {t('privacy_swiper_learn')}
+              </Link>
             </div></SwiperSlide>
           </Swiper>
         </div>

@@ -14,8 +14,10 @@ import './BlogDetail.scss';
 function BlogDetail({navigate}) {
   const { t } = useTranslation();
   const { id } = useParams();
+
   const post = data.find(element => element.id === parseInt(id, 10));
   const posts = data.filter((posts) => posts.category === post.category).slice(0, 4);
+
   const backToCategory = () => {
     navigate(`/blog?category=${post.category}`);
   };
@@ -25,9 +27,14 @@ function BlogDetail({navigate}) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="blog_detail">
-      <button className="back_to_category" onClick={backToCategory}><span>{t('back')}</span></button>
+      <button
+        className="back_to_category"
+        onClick={backToCategory}>
+        <span>{t('back')}</span>
+      </button>
       <div className="detail">
         <div className="post_detail">
           <img src={flag} alt={post.title} />
@@ -60,7 +67,12 @@ function BlogDetail({navigate}) {
               <img src={flag} alt={post.title} />
               <h3>{post.title}</h3>
               <p>{post.prescription}</p>
-              <Link key={post.id} to={`/blog/${post.id}`}>{t('read_more')} <img src={iconReadMore} alt={post.id} /></Link>
+              <Link
+                key={post.id}
+                to={`/blog/${post.id}`}>
+                {t('read_more')}
+                <img src={iconReadMore} alt={post.id} />
+              </Link>
             </div>
           ))}
         </div>

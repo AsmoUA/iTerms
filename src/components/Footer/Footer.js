@@ -3,16 +3,18 @@ import './Footer.scss';
 import smallBackground from '../../assets/assets_footer/small-footer-background.webp';
 import mediumBackground from '../../assets/assets_footer/medium-footer-background.webp';
 import largeBackground from '../../assets/assets_footer/large-footer-background.webp';
-
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
   const [background, setBackground] = useState('');
+  const [showLanguageOptions, setShowLanguageOptions] = useState(false);
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   }; 
+
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -31,8 +33,6 @@ const Footer = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  const [showLanguageOptions, setShowLanguageOptions] = useState(false);
 
   return (
     <>
@@ -59,7 +59,8 @@ const Footer = () => {
                 <li>{t('footer_terms')}</li>
                 <li>{t('footer_policy')}</li>
                 <li>{t('footer_disclaimer')}</li>
-                <li onClick={() => setShowLanguageOptions(!showLanguageOptions)}>{t('footer_version')}
+                <li onClick={() => setShowLanguageOptions(!showLanguageOptions)}>
+                  {t('footer_version')}
                   <span className={showLanguageOptions ? 'isOpen' : ''}></span>
                 </li>
                 {showLanguageOptions && (
@@ -109,7 +110,8 @@ const Footer = () => {
             <li>{t('footer_terms')}</li>
             <li>{t('footer_policy')}</li>
             <li>{t('footer_disclaimer')}</li>
-            <li onClick={() => setShowLanguageOptions(!showLanguageOptions)}>{t('footer_version')}
+            <li onClick={() => setShowLanguageOptions(!showLanguageOptions)}>
+              {t('footer_version')}
               <span className={showLanguageOptions ? 'isOpen' : ''}></span>
             </li>
             {showLanguageOptions && (

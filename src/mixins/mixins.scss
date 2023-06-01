@@ -11,6 +11,7 @@
     @warn "Unknown breakpoint: #{$breakpoint}.";
   }
 }
+
 @mixin learn{
   display: block;
   padding: 12px 0px 12px 54px;
@@ -35,6 +36,7 @@
     top: 23px;
     left: 155px;
   }
+
   &::before{
     content: '';
     width: 2px;
@@ -46,6 +48,7 @@
     left: 155px;
   }
 }
+
 @mixin generate{
   display: inline-block;
   padding: 12px 66px;

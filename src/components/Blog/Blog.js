@@ -17,7 +17,6 @@ function Blog({navigate}) {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
   const [searchParams] = useSearchParams();
   const categoryFromUrl = searchParams.get('category');
 
@@ -41,6 +40,7 @@ function Blog({navigate}) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   return (
     <section className="blog_section">
       <div className="header_for_blog">
@@ -79,7 +79,7 @@ function Blog({navigate}) {
                       dynamicBullets: false,
                       clickable: true,
                       renderBullet: (index, className) => {
-                        return '<span class="' + className + ' custom-bullet">' + (index + 1) + '</span>';
+                        return `<span class="${className} custom-bullet">${index + 1}</span>`;
                       },
                     },
                     grid: {
@@ -95,7 +95,11 @@ function Blog({navigate}) {
                       <img src={flag} alt={post.title} />
                       <h3>{post.title}</h3>
                       <p>{post.prescription}</p>
-                      <Link key={post.id} to={`/blog/${post.id}`}>{t('read_more')} <img src={iconReadMore} alt={post.id} /></Link>
+                      <Link
+                        key={post.id}
+                        to={`/blog/${post.id}`}>{t('read_more')}
+                        <img src={iconReadMore} alt={post.id} />
+                      </Link>
                     </div>
                   </SwiperSlide>
                 ))}

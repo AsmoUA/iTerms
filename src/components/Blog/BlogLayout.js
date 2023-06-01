@@ -7,14 +7,14 @@ import { useTranslation } from 'react-i18next';
 function BlogLayout({ children }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
+
   const categories = data.reduce((categories, post) => {
     if (!categories.includes(post.category)) {
       categories.push(post.category);
     }
     return categories;
   }, []);
-
-  const location = useLocation();
 
   const isActive = (category) => {
     const queryParams = new URLSearchParams(location.search);
@@ -29,7 +29,8 @@ function BlogLayout({ children }) {
           {categories.map((category) => (
             <li key={category}>
               <NavLink
-                to={`/blog?category=${category}`} className={isActive(category) ? 'menu_link_active' : 'link_category'}>
+                to={`/blog?category=${category}`}
+                className={isActive(category) ? 'menu_link_active' : 'link_category'}>
                 {category} ({data.filter((post) => post.category === category).length})
               </NavLink>
             </li>

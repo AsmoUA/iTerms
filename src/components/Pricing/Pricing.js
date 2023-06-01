@@ -68,7 +68,22 @@ const Pricing = () => {
       button: t('choose_plan'),
       activeClass: activeButton === 0 ? 'active_button' : '',
       onClick: () => setActiveButton(0),
-      include: [greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude, greenInclude],
+      include: [
+        greenInclude,
+        greenInclude,
+        greenInclude,
+        greenInclude, 
+        greenInclude, 
+        greenInclude, 
+        greenInclude, 
+        greenInclude, 
+        greenInclude, 
+        greenInclude, 
+        greenInclude,
+        greenInclude,
+        greenInclude,
+        greenInclude,
+      ],
     },
     {
       desc: t('for_businesses'),
@@ -79,7 +94,22 @@ const Pricing = () => {
       button: t('continue_free'),
       activeClass: activeButton === 1 ? 'active_button' : '',
       onClick: () => setActiveButton(1),
-      include: [blueInclude, blueInclude, blueInclude, blueInclude, blueInclude, blueUninclude, blueUninclude, blueUninclude, blueInclude, blueUninclude, blueUninclude, blueUninclude, blueUninclude, blueUninclude],
+      include: [
+        blueInclude, 
+        blueInclude, 
+        blueInclude, 
+        blueInclude, 
+        blueInclude, 
+        blueUninclude, 
+        blueUninclude, 
+        blueUninclude, 
+        blueInclude, 
+        blueUninclude, 
+        blueUninclude, 
+        blueUninclude, 
+        blueUninclude, 
+        blueUninclude,
+      ],
     },
   ];
   let contentGlobalIndex = 0;
@@ -100,7 +130,11 @@ const Pricing = () => {
           <p className="group_swich__month">{t('first_month')}</p>
           <div className="swich_box">
             <label className="toggle-switch">
-              <input type="checkbox" checked={isToggled} onChange={onToggle} />
+              <input
+                type="checkbox"
+                checked={isToggled}
+                onChange={onToggle}
+              />
               <span className="switch" />
             </label>
           </div>
@@ -116,19 +150,53 @@ const Pricing = () => {
           </>
           <div className="tarifs">
             <>
-              <img className="tarifs__credit_card" src={creditCard} alt="Credit card"/>
-              <svg className="bottom-svg" width="415" height="98" viewBox="0 0 350 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <img
+                className="tarifs__credit_card"
+                src={creditCard}
+                alt="Credit card"
+              />
+              <svg 
+                className="bottom-svg" 
+                width="415" 
+                height="98" 
+                viewBox="0 0 350 98" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_789_1)">
-                  <ellipse cx="237.055" cy="49.435" rx="281.055" ry="49.2396" fill="url(#paint0_radial_789_1)"/>
+                  <ellipse 
+                    cx="237.055" 
+                    cy="49.435" 
+                    rx="281.055" 
+                    ry="49.2396" 
+                    fill="url(#paint0_radial_789_1)"
+                  />
                 </g>
                 <defs>
-                  <radialGradient id="paint0_radial_789_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180.5 45) rotate(90) scale(64.5 461.195)">
+                  <radialGradient 
+                    id="paint0_radial_789_1" 
+                    cx="0" 
+                    cy="0" 
+                    r="1" 
+                    gradientUnits="userSpaceOnUse" 
+                    gradientTransform="translate(180.5 45) rotate(90) scale(64.5 461.195)"
+                  >
                     <stop stopColor="#DEE7F1"/>
-                    <stop offset="0.130208" stopColor="#E9F0FA" stopOpacity="0.869792"/>
-                    <stop offset="1" stopColor="white" stopOpacity="0"/>
+                    <stop offset="0.130208" 
+                      stopColor="#E9F0FA" 
+                      stopOpacity="0.869792"
+                    />
+                    <stop
+                      offset="1"
+                      stopColor="white"
+                      stopOpacity="0"
+                    />
                   </radialGradient>
                   <clipPath id="clip0_789_1">
-                    <rect width="390" height="98" fill="white"/>
+                    <rect
+                      width="390"
+                      height="98"
+                      fill="white"
+                    />
                   </clipPath>
                 </defs>
               </svg>
@@ -137,7 +205,18 @@ const Pricing = () => {
               <div key={index} className={`tarif tarif${index}`}>
                 <span className="tarif__desc">{tarif.desc}</span>
                 <h2 className={'tarif__name' + (index)}>{tarif.name}</h2>
-                <p className="tarif__cost"><sup className="tarif__cur">$</sup>{tarif.price}<sup className="tarif__cur">{tarif.cent}</sup><span className="tarif__period">{tarif.period}</span></p>
+                <p className="tarif__cost">
+                  <sup className="tarif__cur">
+                    $
+                  </sup>
+                  {tarif.price}
+                  <sup className="tarif__cur">
+                    {tarif.cent}
+                  </sup>
+                  <span className="tarif__period">
+                    {tarif.period}
+                  </span>
+                </p>
                 <button
                   className={`tarif__choice ${tarif.activeClass}`}
                   onClick={() => { setActWind(!isActWind); tarif.onClick(); }}>
@@ -146,7 +225,8 @@ const Pricing = () => {
                 <hr></hr>
                 <div className="tarif__link_for_table"
                   onClick={() => handleFeaturesClick(index)}>
-                  {t('see_all_features')}<span className={activeFeatures === index? ' isOpen': ''}></span>
+                  {t('see_all_features')}
+                  <span className={activeFeatures === index ? ' isOpen' : ''}></span>
                 </div>
                 {activeFeatures === index && (
                   <div className="tarif__table">
@@ -174,7 +254,9 @@ const Pricing = () => {
           <table className="max_table">
             <tbody>
               {tablInfo.flatMap((infoSection, sectionIndex) => [
-                <tr key={`sectionTitle-${sectionIndex}`}><th colSpan={tarifs.length + 1}>{infoSection.title}</th></tr>,
+                <tr key={`sectionTitle-${sectionIndex}`}>
+                  <th colSpan={tarifs.length + 1}>{infoSection.title}</th>
+                </tr>,
                 ...infoSection.contents.map((content, contentIndex) => {
                   const contentRow = tarifs.map((tarif, i) => (
                     <td key={i} className="include">

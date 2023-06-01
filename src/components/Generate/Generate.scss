@@ -4,13 +4,16 @@
 .main{
 	overflow: hidden;
 }
+
 .main_background {
 	position: relative;
 	max-width:1920px;
 	height: 740px;
+
 	&_tutorial{
 		display: none;
 	}
+
 	&_lock img {
 		max-width: 180px; 
 		position: absolute; 
@@ -19,6 +22,7 @@
 		top: 325px;
 		z-index: 1;
 	}
+
 	&_page img {
 		position: absolute;
 		max-width: 550px;
@@ -26,6 +30,7 @@
 		left: 20%;
 		top: 160px;
 	}
+
 	&_line_violet img {
 		position: absolute;
 		max-width: 70%;
@@ -34,6 +39,7 @@
 		top: 400px;
 		pointer-events: none;
 	}
+
 	&_book img {
 		position: absolute;
 		max-width: 230px;
@@ -42,6 +48,7 @@
 		top: 490px;
 		z-index: 1;
 	}
+
 	&_line_gray img {
 		position: absolute;
 		max-width: 70%;
@@ -50,6 +57,7 @@
 		top: 210px;
 		pointer-events: none;
 	}
+
 	&_cookie img {
 		position: absolute;
 		max-width: 150px;
@@ -57,6 +65,7 @@
 		left: 23%;
 		top: 460px;
 	}
+
 	&_paperplane img{
 		position: absolute;
 		max-width: 85px;
@@ -65,26 +74,32 @@
 		top: 370px;
 	}
 }
+
 .main_swiper{
 	&_solution{
 		display: none;
 	}
 }
+
 .main_tutorial-streamline{
   display: none;
 }
+
 .main_cardPricing{
 	margin-top: 100px;
 	height: 525px;
 	display: block;
 	position: relative;
+
 	.main_cardPricing_detail{
 		padding: 0 37px;
+
 		.p_large,
 		.h2_large,
 		.h4_large{
 			display: none;
 		}
+
 		.p_medium{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -97,6 +112,7 @@
 			color: #B6BFD9;
 			margin-bottom: 8px;
 		}
+
 		.h2_medium{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -120,6 +136,7 @@
 			margin: 0 auto;
 		}
 	}
+
 	.main_cardPricing_acsess{
 		.h2_med{
 			font-family: 'Poppins';
@@ -131,6 +148,7 @@
 			color: $text-color;
 			margin-top: 300px;
 		}
+
 		.h5_med{
 			font-family: 'Poppins';
 			font-style: normal;
@@ -140,11 +158,13 @@
 			text-align: center;
 			color: $text-color;
 		}
+
 		.h2_lar,
 		.h5_lar{
 			display: none;
 		}
 	}
+
 	.main_cardPricing_cardGetPrivacy_small{
 		display: inline-block;
 		position: absolute;
@@ -155,19 +175,22 @@
 		right: -90px;
 		z-index: 2;
 	}
+
 	.main_cardPricing_cardPencil_small{
-		display: inline-block;
+		display: none;
 		position: absolute;
 		width: 300px;
 		height: 300px;
 		top: 382px;
     right: -26%;
 		z-index: 2;
+
 		@include respond-to(medium){
 			top: 393px;
     	right: 11%;
 		}
 	}
+
 	.main_cardPricing_cardCircle_small{
 		display: inline-block;
 		position: absolute;
@@ -180,6 +203,7 @@
 		margin-top: 50px;
 		z-index: 2;
 	}
+
 	.main_cardPricing_Card_small{
 		display: inline-block;
 		position: absolute;
@@ -187,24 +211,33 @@
 		height: 325px;
 		top: 310px;
 		left: -125px;
+
+		@include respond-to(medium){
+			left: -10%;
+		}
 	}
 }
+
 .main_tutorial_small{
 	position: relative;
+
 	&_background{
 		left: 0%;
 		bottom: 30%;
 		position: absolute;
 		width: 101%;
+
 		@include respond-to(medium) {
 			left: 19%;
 			bottom: 13%;
 			width: 63%;
 		}
+
 		img{
 			width: 100%;
 		}
 	}
+
 	h5{
 		font-family: $Poppins;
 		font-style: normal;
@@ -215,11 +248,13 @@
 		text-transform: uppercase;
 		color: #B6BFD9;
 		margin-bottom: 8px;
+
 		@include respond-to(medium) {
 			font-size: 18px;
 			margin-bottom: 16px;
 		}
 	}
+
 	h1{
 		font-family: $Poppins;
 		font-style: normal;
@@ -230,44 +265,52 @@
 		color: $text-color;
 		width: 95%;
 		margin: 0 auto 32px;
+
 		@include respond-to(medium) {
 			font-size: 64px;
 			margin-bottom: 48px;
 			width: 62%
 		}
 	}
+
 	&_button{
 		display: flex;
 		gap: 10px;
 		align-items: center;
 		justify-content: center;
 		margin-top: 3%;
+
 		&_generate{
-				@include generate;
+			@include generate;
 				border:none;
 				font-family: $Poppins;
 		}
+
 		&_learn{
-				@include learn;
+			@include learn;
 				border: none;
 				font-family: $Poppins;
 		}
 	}
 }
+
 .main_streamline_small{
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
+
 	&_background img{
 		position: relative; 
 		width: 100%;
 		left: 10px; 
 		top: 50px; 
 	}
+
 	&_description{
 		padding-top: 10%;
 		padding-left: 5%;
+
 		&_text_gradient{
 			position: absolute;
 			width: 254px;
@@ -275,6 +318,7 @@
 			top: 500px;
 			background-repeat: no-repeat;
 		}
+
 		&_name{
 			font-family: $Poppins;
 			font-style: normal;
@@ -284,6 +328,7 @@
 			text-transform: uppercase;
 			color: #B6BFD9;
 		}
+
 		&_title{
 			font-family: $Poppins;
 			font-style: normal;
@@ -291,6 +336,7 @@
 			font-size: 24px;
 			color: $text-color;
 		}
+
 		&_more{
 			padding-top: 1%;
 			font-family: $Open_Sans;
@@ -299,6 +345,7 @@
 			font-size: 16px;
 			color: $bkog-paragraph;
 		}
+
 		&_detail{
 			display: flex;
 			flex-direction: column;
@@ -307,12 +354,18 @@
 			gap: 16px;
 			padding-top: 4%;
 			padding-left: 5%;
-			&_firstPoint, &_secondPoint, &_thirdPoint, &_fourthPoint, &_fifthPoint{
+
+			&_firstPoint, 
+			&_secondPoint, 
+			&_thirdPoint, 
+			&_fourthPoint, 
+			&_fifthPoint{
 				display: flex;
 				flex-direction: row;
 				align-items: flex-start;
 				gap:14px;
 			}
+
 			&_style{
 				font-family: $Open_Sans;
 				font-style: normal;
@@ -321,14 +374,17 @@
 				color: $bkog-paragraph;
 			}
 		}
+
 		&_button{
 			display: flex;
 			justify-content: center;
 			gap: 5%;
 			padding-top: 3%;
+
 			&_generate{
 				@include generate;
 			}
+
 			&_learn{
 				@include learn;
 			}
@@ -352,8 +408,10 @@
 	position: relative;
 	z-index: 2;
 	top: 50px;
+
 	div {
 		max-width: 129px;
+
 		p{
 			font-family: $Open_Sans;
 			font-style: normal;
@@ -363,13 +421,16 @@
 		}
 	}
 }
+
 .main_safeguards_small{
 	position: relative;
 	z-index: 1;
+
 	&_background{
 		width:100%;
 		max-height: 1000px;
 	}
+
 	&_images{
 		display: grid;
 		grid-template-columns: 130px;
@@ -378,10 +439,12 @@
 		gap: 15%;
 		left: 45%;
 	}
+
 	&_compliant {
 		width: 130px;
 		height: 112px;
 	}
+
 	&_text{
 		position: absolute;
 		z-index: 3;
@@ -394,6 +457,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
 		h3{
 			font-family: $Poppins;
 			font-style: normal;
@@ -405,6 +469,7 @@
 			text-transform: uppercase;
 			color: #E7E9ED;
 		}
+
 		h1{
 			font-family: &$Poppins;
 			font-style: normal;
@@ -413,6 +478,7 @@
 			line-height: 120%;
 			color: $white-color;
 		}
+
 		h4{
 			font-family: &$Open_Sans;
 			font-style: normal;
@@ -428,28 +494,33 @@
 	position: relative;
 	left:2%;
 }
+
 .main_post {
 	margin:4% 4%;
 	display: flex;
 	flex-direction: column;
+
 	.main_post_title{
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		gap: 16px;
 		margin-bottom: 60px;
+
 		@include respond-to(medium){
 			justify-content: center;
 			align-items: center;
 			max-width: 70%;
 			margin: 0 auto 60px;
 		}
+
 		@include respond-to(large){
 			justify-content: center;
 			align-items: center;
 			max-width: 33%;
 			margin: 0 auto 60px;
 		}
+
 		h3{
 			font-family: $Poppins;
 			font-style: normal;
@@ -458,6 +529,7 @@
 			text-transform: uppercase;
 			color: #B6BFD9;
 		}
+
 		p{
 			font-family: $Poppins;
 			font-style: normal;
@@ -465,6 +537,7 @@
 			font-size: 48px;
 			color: $text-color;
 		}
+
 		h4{
 			font-family: $Open_Sans;
 			font-style: normal;
@@ -473,43 +546,54 @@
 			font-size: 16px;
 			line-height: 150%;
 			color: $text-color;
+
 			@include respond-to(medium){
 				text-align: center;
 			}
+
 			@include respond-to(large){
 				text-align: center;
 			}
 		}
 	}
+
 	&_container{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		padding: 0px;
 		gap: 16px;
+
 		.main_postNews{ 
 			width: 330px;
 			max-height: 444px;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
+
 			@include respond-to(medium){width: 255px;}
+
 			@include respond-to(large){width: 255px;}
+
 			img{
 				width: 100%
 			}
+
 			&_learn {
 			@include learn;
 				padding-left: 0;
+
 				&::after, &::before{
 					left: 100px;
 				}
 			}
+
 			h2{
 				font-family: $Poppins;
 				font-style: normal;
 				font-weight: 400;
 			}
+
 			h4{
 				padding-top:15px;
 				font-family: $Open_Sans;
@@ -518,44 +602,54 @@
 			}
 		}
 	}
+
 	.main_post_button {
 		margin:0 auto;
+
 		&_generate{
 			margin-top:8%;
 			@include generate;
 		}
 	}
 }
+
 .main_background {
+
 	@include respond-to(medium){
 		&_page img {
 			max-width: 650px;
 			max-height: 580px;
 			left: 40%;
 		}
+
 		&_lock img {
 			max-width: 134px; 
 			max-height: 135px; 
 			left: 13%;
 		}
+
 		&_book img {
 			max-width: 280px;
 			max-height: 280px;
 			left: 53%;
 		}
+
 		&_cookie img {
 			left: 23%;
 		}
 	}
 }
+
 .main_safeguards_small{
 	@include respond-to(medium){
 		h3{
 			font-size: 16px;
 		}
+
 		h1{
 			font-size: 32px;
 		}
+
 		h4{
 			font-size: 20px;
 		}
@@ -571,6 +665,7 @@
 			top:150px;
 			left:25%;
 			z-index: 1;
+
 			&_text{
 				font-family:$Poppins;
 				font-style: normal;
@@ -581,6 +676,7 @@
 				color: #B6BFD9;
 				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 			}		
+
 			&_aggrements{
 				width: calc(89%);
 				font-family: $Poppins;
@@ -590,6 +686,7 @@
 				line-height: 120%;
 				color: $text-color;
 			}		
+
 			&_aggrements_policy{
 				font-family: $Poppins;
 				font-style: normal;
@@ -597,16 +694,20 @@
 				font-size: 20px;
 				color: #646464; 
 				margin-bottom: 41px;
+
 				&_color{
 					color:#32D989;
 				}
+
 				&_bolder {
 					font-weight: bold;
 				}
 			}
+
 			&_button{
 				display: flex;
 				gap:3%;
+
 				&_generate{
 					display: inline-block;
 					padding: 12px 32px;
@@ -622,18 +723,22 @@
 					margin-bottom: 5px;
 					background-color: $Iterms-button;
 					cursor: pointer;
+
 					&:hover{
 						background: $Iterms-button;
 						color: $white-color;
 						transition: 0.5s;
+
 						&::before{
 							display: none;
 						}
+
 						&::after{
 							display: none;
 						}
 					}
 				}
+
 				&_learn{
 					display: block;
 					padding: 12px 45px 12px 32px;
@@ -647,6 +752,7 @@
 					transition: 0.5s;
 					border: none;
 					cursor: pointer;
+
 					&::after{
 						content: '';
 						width: 2px;
@@ -657,6 +763,7 @@
 						top: 23px;
 						left: 135px;
 					}
+
 					&::before{
 						content: '';
 						width: 2px;
@@ -670,11 +777,13 @@
 				}
 			}
 		}
+
 		&_lock img {
 			max-width: 150px; 
 			max-height: 330px; 
 			left: 2%;
 		}
+
 		&_page img {
 			position: absolute;
 			max-width: 700px;
@@ -682,6 +791,7 @@
 			left: 60%;
 			top: 160px;
 		}
+
 		&_line_violet img {
 			position: absolute;
 			max-width: 90%;
@@ -689,6 +799,7 @@
 			left: 0px; 
 			top: 400px;
 		}
+
 		&_book img {
 			position: absolute;
 			max-width: 430px;
@@ -697,6 +808,7 @@
 			top: 490px;
 			z-index: 1;
 		}
+
 		&_line_gray img {
 			position: absolute;
 			max-width: 90%;
@@ -704,6 +816,7 @@
 			left: 0px;
 			top: 210px;
 		}
+		
 		&_cookie img {
 			position: absolute;
 			max-width: 300px;
@@ -711,6 +824,7 @@
 			left: 23%;
 			top: 540px;
 		}
+
 		&_paperplane img{
 			position: absolute;
 			max-width: 85px;
@@ -720,16 +834,19 @@
 		}
 	}
 }
+
 .main_tutorial_small{
 	@include respond-to(large){
 		display: none;
 	}
 }
+
 .main_streamline_small{
 	@include respond-to(large){
 		display: none;
 	}
 }
+
 .main_tutorial-streamline{
   @include respond-to(large){
 		display: block;
@@ -737,12 +854,15 @@
 		position: relative;
 		margin-top:60px;
 		margin-bottom: 8%;
+
 		&_background {
 			left:2%;
+
 			img{
 				max-width:100%;
 			}
 		}
+
     &_text_gradient{
 			position: absolute;
 			max-width: 254px;
@@ -760,9 +880,11 @@
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 		}
+
 		&_description{
 			margin-top:4%;
 			z-index: 10;
+
 			&_name{
 				font-family: $Poppins;
 				font-style: normal;
@@ -772,6 +894,7 @@
 				text-transform: uppercase;
 				color: #B6BFD9;
 			}
+
 			&_title{
 				left: calc(50% - 380px/2 + 205px);
 				font-family: $Poppins;
@@ -780,6 +903,7 @@
 				font-size: 48px;
 				color: $text-color;
 			}
+
 			&_more{
 				max-width: 411.01px;
 				max-height: 130px;
@@ -789,21 +913,25 @@
 				font-size: 16px;
 				color: $bkog-paragraph;
 			}
+
 			&_button{
 				display: flex;
 				gap: 5%;
 				margin-top: 30px;
+
 				&_generate{
 					@include generate;
 					padding: 12px 24px;
 					cursor: pointer;
 				}
+
 				&_learn{
 					@include learn;
 					padding: 12px 61px 12px 54px;
 					cursor: pointer;
 				}
 			}
+
 			&_detail{
 				display: flex;
 				flex-direction: column;
@@ -813,6 +941,7 @@
 				gap: 16px;
 				max-width: 550px;
 				height: 304px;
+
 				&_firstPoint,
 				&_secondPoint,
 				&_thirdthPoint,
@@ -826,6 +955,7 @@
 					align-items: flex-start;
 					gap:14px;      
 				}
+
 				&_style{
 						font-family: $Open_Sans;
 						font-style: normal;
@@ -833,6 +963,7 @@
 						font-size: 16px;
 						color: $bkog-paragraph;  
 				}
+
 				&_background{
 						width: 20px;
 						height: 20px;
@@ -841,9 +972,11 @@
 		}  
   }
 }   
+
 .main_swiper{
 	@include respond-to(large){
 	position: relative;
+
 		&_solution{
 			display: block;
 			position:absolute;
@@ -860,33 +993,42 @@
 		}
 	}
 }
+
 .main_cardPricing{
 	@include respond-to(large){
 		display: block;
 		position: relative;
 		height: 900px;
 		overflow: visible;
+		
 		.main_cardPricing_cardCircle_small{
 			display: none;
 		}
+
 		.main_cardPricing_cardPencil_small{
 			display: none;
 		}
+
 		.main_cardPricing_Card_small{
 			display: none;
 		}
+
 		.main_cardPricing_cardGetPrivacy_small{
 			display: none;
 		}
+
 		.main_cardPricing_acsess{
 			position: relative;
 			top: 700px;
+
 			.h5_med{
 				display: none;
 			}
+
 			.h2_med{
 				display: none;
 			}
+
 			.h2_lar{
 				display: block;
 				font-family: 'Poppins';
@@ -897,6 +1039,7 @@
 				text-align: center;
 				color: $text-color;
 			}
+
 			.h5_lar{
 				display: block;
 				font-family: 'Poppins';
@@ -908,6 +1051,7 @@
 				color: $text-color;
 			} 
 		}
+
 		&_background{
 			margin: 0 auto;
 			width: 1231px;
@@ -917,6 +1061,7 @@
 			left: 50%;
 			translate: -50%;
 		}
+
 		&_cardLubenda{
 			position: absolute;
 			width: 32%;
@@ -925,6 +1070,7 @@
 			top: 45%;
 			background-repeat: no-repeat;
 		}
+
 		&_cardGetPrivacy{
 			position: absolute;
 			width: 24%;
@@ -935,6 +1081,7 @@
 			background-size: cover;
 			filter: brightness(1.2);
 		}
+
 		&_cardGetTerms{ 
 			position: absolute;
 			width: 390px;
@@ -945,6 +1092,7 @@
 			filter: brightness(1.2);
 			background-size: cover;
 		}
+
 		&_cardShopify{
 			position: absolute;
 			width: 442px;
@@ -953,6 +1101,7 @@
 			top: 42%;
 			background-repeat: no-repeat;
 		}
+
 		&_cardPencil{
 			position: absolute;
 			width: 40%;
@@ -962,6 +1111,7 @@
 			background-repeat: no-repeat;
 			z-index: 3;
 		}
+
 		.main_cardPricing_detail{
 			position: absolute;
 			max-width: 520px;
@@ -975,11 +1125,13 @@
 			align-items: center;
 			padding: 0px;
 			gap: 16px;
+
 			.p_medium,
 			.h2_medium,
 			.h4_medium{
 				display: none;
 			}
+
 			.p_large{
 				display: block;
 				font-family: $Poppins;
@@ -991,6 +1143,7 @@
 				text-transform: uppercase;
 				color: #B6BFD9;
 			}
+
 			.h2_large{
 				display: block;
 				font-family: $Poppins;
@@ -1001,6 +1154,7 @@
 				text-align: center;
 				color: $text-color;
 			}
+
 			.h4_large{
 				display: block;
 				font-family: $Open_Sans;
@@ -1010,6 +1164,7 @@
 				color: $bkog-paragraph;
 			}
 		}
+
 		&_cardCircle{
 			position: absolute;
 			width: 267px;
@@ -1021,11 +1176,13 @@
 		}
 	}
 }
+
 .main_safeguards_small{
 	@include respond-to(large){
   	display: none;
 	}
 }
+
 .main_img_large{
 	min-height: 380px;
 	display: grid;
@@ -1040,6 +1197,7 @@
 	padding: 3% 6%;
 	position: relative;
 	bottom: -40px;
+
 	@include respond-to (medium) {
 		grid-template-columns: auto auto auto auto;
 		column-gap: 14%;
@@ -1048,6 +1206,7 @@
 		padding: 3% 6%;
 		z-index: 2;
 	}
+
 	@include respond-to (large) {
 		grid-template-columns: auto auto auto auto; 
 		column-gap: 18%;
@@ -1056,6 +1215,7 @@
 		padding: 3% 6%;
 		z-index: 2;
 	}
+
 	div{
 		display: flex;
 		flex-direction: column;
@@ -1063,10 +1223,12 @@
 		justify-content: center;
 		gap: 8px;
 	}
+
 	img{
 		height: 46px;
 		width: 46px;
 	}
+
 	p{
 		font-family: $Open_Sans;
 		font-style: normal;
@@ -1077,11 +1239,13 @@
 		text-align: center;
 	}
 }
+
 .main_swiperPost{
 	@include respond-to(large){
 		left:10%;
 	}
 }
+
 .main_post{
 	@include respond-to(large){
 		&_container{

@@ -129,35 +129,111 @@ const PriPolBlog = () => {
       <p className="p_large">{t('privacy_blog_take')}</p>
       <div className="block_medium">
         <h6>{t('privacy_blog_table')}</h6>
-        <h5 onClick={toggleOpen}>{t('privacy_blog_general')}<span className={isOpen ? 'isOpen' : ''}></span></h5>
+        <h5 onClick={toggleOpen}>
+          {t('privacy_blog_general')}
+          <span className={isOpen ? 'isOpen' : ''}></span>
+        </h5>
         {isOpen && data.map((item, index) => (
-          <ExpandingInfo key={index} title={item.title} p1={item.p1} h51={item.h51} p2={item.p2} h52={item.h52} p3={item.p3} />
+          <ExpandingInfo
+            key={index}
+            title={item.title}
+            p1={item.p1}
+            h51={item.h51}
+            p2={item.p2}
+            h52={item.h52}
+            p3={item.p3}
+          />
         ))}
       </div>
       <div className="flex_large">
         <div className="block_large">
           <h6>{t('privacy_blog_table')}</h6>
-          <h5 className={activeClass(isOpenGeneral, 'general')} onClick={toggleOpenGeneral}>{t('privacy_blog_general')}</h5>
-          <h5 className={activeClass(isOpenTrust, 'trust')} onClick={toggleOpenTrust}>{t('privacy_blog_trust')}</h5>
-          <h5 className={activeClass(isOpenPayment, 'payment')} onClick={toggleOpenPayment}>{t('privacy_blog_payment')}</h5>
-          <h5 className={activeClass(isOpenHelp, 'help')} onClick={toggleOpenHelp}>{t('privacy_blog_help')}</h5>
-          <h5 className={activeClass(isOpenContacts, 'contacts')} onClick={toggleOpenContacts}>{t('privacy_blog_contacts')}</h5>
+          <h5
+            className={activeClass(isOpenGeneral, 'general')}
+            onClick={toggleOpenGeneral}
+          >
+            {t('privacy_blog_general')}
+          </h5>
+          <h5 
+            className={activeClass(isOpenTrust, 'trust')} 
+            onClick={toggleOpenTrust}
+          >
+            {t('privacy_blog_trust')}
+          </h5>
+          <h5 
+            className={activeClass(isOpenPayment, 'payment')} 
+            onClick={toggleOpenPayment}
+          >
+            {t('privacy_blog_payment')}
+          </h5>
+          <h5 
+            className={activeClass(isOpenHelp, 'help')} 
+            onClick={toggleOpenHelp}
+          >
+            {t('privacy_blog_help')}
+          </h5>
+          <h5 
+            className={activeClass(isOpenContacts, 'contacts')} 
+            onClick={toggleOpenContacts}
+          >
+            {t('privacy_blog_contacts')}
+          </h5>
         </div>
         <div>
           {isOpenGeneral && data.map((item, index) => (
-            <ExpandingInfo key={index} title={item.title} p1={item.p1} h51={item.h51} p2={item.p2} h52={item.h52} p3={item.p3} />
+            <ExpandingInfo
+              key={index}
+              title={item.title}
+              p1={item.p1}
+              h51={item.h51}
+              p2={item.p2}
+              h52={item.h52}
+              p3={item.p3}
+            />
           ))}
           {isOpenTrust && data.map((item, index) => (
-            <ExpandingInfo key={index} title={item.title} p1={item.p1} h51={item.h51} p2={item.p2} h52={item.h52} p3={item.p3} />
+            <ExpandingInfo 
+              key={index} 
+              title={item.title} 
+              p1={item.p1} 
+              h51={item.h51} 
+              p2={item.p2} 
+              h52={item.h52} 
+              p3={item.p3}
+            />
           ))}
           {isOpenPayment && data.map((item, index) => (
-            <ExpandingInfo key={index} title={item.title} p1={item.p1} h51={item.h51} p2={item.p2} h52={item.h52} p3={item.p3} />
+            <ExpandingInfo 
+              key={index} 
+              title={item.title} 
+              p1={item.p1} 
+              h51={item.h51} 
+              p2={item.p2} 
+              h52={item.h52} 
+              p3={item.p3}
+            />
           ))}
           {isOpenHelp && data.map((item, index) => (
-            <ExpandingInfo key={index} title={item.title} p1={item.p1} h51={item.h51} p2={item.p2} h52={item.h52} p3={item.p3} />
+            <ExpandingInfo 
+              key={index} 
+              title={item.title} 
+              p1={item.p1} 
+              h51={item.h51} 
+              p2={item.p2} 
+              h52={item.h52} 
+              p3={item.p3}
+            />
           ))}
           {isOpenContacts && data.map((item, index) => (
-            <ExpandingInfo key={index} title={item.title} p1={item.p1} h51={item.h51} p2={item.p2} h52={item.h52} p3={item.p3} />
+            <ExpandingInfo 
+              key={index} 
+              title={item.title} 
+              p1={item.p1} 
+              h51={item.h51} 
+              p2={item.p2} 
+              h52={item.h52} 
+              p3={item.p3}
+            />
           ))}
         </div>
       </div>
