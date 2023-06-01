@@ -95,7 +95,7 @@ const SwiperPost = () => {
                   <h4>{user.review}</h4>
                   <div>
                     <div className="stars">
-                      <p>{user.name.split(' ')[0].length - 1}{renderStars(user.name)}</p>
+                      <p>{user.name.split(' ')[0].length - 1}.0{renderStars(user.name)}</p>
                     </div>
                   </div>
                 </div>
