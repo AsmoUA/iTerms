@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
 import backgroundImage from './assets/Hero_image_backgruund.webp';
 
 
 
-function App() {
+const App = () => {
   
   return (
     <BrowserRouter>
@@ -20,6 +20,6 @@ function App() {
       </main>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

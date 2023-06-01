@@ -1,0 +1,299 @@
+@import '../../mixins/mixins.scss';
+@import '../../globals/globals.scss';
+
+.blog_detail {
+  position: relative;
+  max-width: 1030px;
+  margin: 128px auto 180px;
+  @include respond-to(large) {
+  }
+  .back_to_category{
+    position: absolute;
+    left: 0;
+    top: -128px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: $Iterms-button;
+    border: none;
+    color: $white-color;
+    text-align: center;
+    font-family: $Open_Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    width: 80px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .back_to_category span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+  }
+
+  .back_to_category span:before {
+    content: '<<';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 15px;
+    transition: 0.5s;
+  }
+
+  .back_to_category:hover span {
+    padding-left: 25px;
+  }
+
+  .back_to_category:hover span:before {
+    opacity: 1;
+    left: -2px;
+  }
+}
+.detail {
+  max-width: 75%;
+  display: flex;
+  flex-flow: column-reverse;
+  margin: 0 auto;
+   @include respond-to(medium) {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+   @include respond-to(large) {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+}
+.content_for_detail {
+  display: none;
+  @include respond-to(medium) {
+    display: block;
+    min-width: 100px;
+  }
+  @include respond-to(large) {
+    display: block;
+    min-width: 100px;
+  }
+  @include respond-to(large) {
+    min-width: 100px;
+  }
+  h4 {font-family: $Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 120%;
+      color: $text-color;
+      margin-bottom: 24px;
+    @include respond-to(medium) {
+      font-size: 18px;
+    }
+  }
+  .outerList {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    li {
+      a {
+        font-family: $Open_Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $text-color;
+        text-decoration: none;
+        @include respond-to (medium) {
+            font-size: 12px;
+          }
+        &:hover{
+          font-family: $Open_Sans;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          text-decoration: none;
+          color: $Iterms-button;
+          @include respond-to (medium) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .innerList{
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 8px;
+      li {
+        counter-increment: sub-list;
+        &::before {
+            content: counter(list-item, decimal) "." counter(sub-list, decimal) " ";
+        }
+      }
+    }
+  }
+}
+.post_detail {
+  width: 100%;
+  @include respond-to(large) {
+    width: 50%;
+  }
+  @include respond-to(large) {
+    width: 690px;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 48px;
+    @include respond-to(medium) {
+      width: 70%;
+      margin-bottom: 48px;
+    }
+    @include respond-to(large) {
+      width: 690px;
+      height: 400px;
+      margin-bottom: 48px;
+    }
+  }
+  h2 {
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 120%;
+    color: $text-color;
+    margin-bottom: 16px;
+    @include respond-to (medium) {
+      font-size: 32px;
+    }
+  }
+  p {
+    font-family: $Open_Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $bkog-paragraph;
+    margin-bottom: 48px;
+    @include respond-to (medium) {
+      max-width: 70%;
+      font-size: 12px;
+    }
+  }
+}
+.share {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  p {
+      font-family: $Open_Sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $text-color;
+      margin-right: 16px;
+  }
+  a {
+    img {
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.posts_in_categories {
+  display: none;
+  @include respond-to(medium) {
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  @include respond-to(large) {
+    display: block;
+  }
+  h2 {
+      font-family: $Poppins;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 120%;
+      color: $text-color;
+      margin-bottom: 60px;
+  }
+}
+.another_post_in_category{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  .post {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    @include respond-to(large) {
+      max-width: 255px;
+      height: 444px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px 8px 0px 0px;
+    }
+
+    h3 {
+      font-family: $Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 120%;
+      color: $text-color;
+      @include respond-to(medium) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      @include respond-to(medium) {
+        font-size: 12px;
+      }
+      font-family: $Open_Sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $bkog-paragraph;
+    }
+
+    a {
+      @include respond-to(medium) {
+        font-size: 12px;
+      }
+      display: flex;
+      align-items: center;
+      font-family: $Poppins;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $text-color;
+      text-decoration: none;
+      img {
+        @include respond-to(medium) {
+          width: 16px;
+          height: 16px;
+        }
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

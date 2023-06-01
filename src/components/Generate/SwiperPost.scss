@@ -6,7 +6,7 @@
 	.swiper-button-next {
 		position: absolute !important;
 		top: 465px !important;
-		color: #1D212A !important;
+		color: $text-color !important;
 	}
 	.swiper-button-next:after, 
 	.swiper-button-prev:after {
@@ -30,7 +30,7 @@
 		display: flex;
 		flex-direction: column;
 		h5{
-			font-family: 'Poppins';
+			font-family: $Poppins;
 			font-style: normal;
 			font-weight: 500;
 			font-size: 14px;
@@ -40,20 +40,20 @@
 			color: #B6BFD9;
 		}
 		h2{
-			font-family: 'Poppins';
+			font-family: $Poppins;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 24px;
 			line-height: 120%;
-			color: #1D212A; 
+			color: $text-color; 
 		}
 		p{
-			font-family: 'Open Sans';
+			font-family: $Open_Sans;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 150%;
-			color: #565A65;
+			color: $bkog-paragraph;
 		}
 		.description{
 			max-width: 284px;
@@ -140,25 +140,25 @@
 		padding: 34px 24px 20px 24px;
 		max-width: 430px;
 		max-height: 370px;
-		background-color: #FFFFFF;
+		background-color: $white-color;
 		border-radius: 8px;
 		position: relative;
 		h5{
-			font-family: 'Poppins';
+			font-family: $Poppins;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 18px;
 			line-height: 120%;
-			color: #1D212A;
+			color: $text-color;
 			margin: 16px 0;
 		}
 		p{
-			font-family: 'Open Sans';
+			font-family: $Open_Sans;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 150%;
-			color: #565A65;
+			color: $bkog-paragraph;
 			flex-grow: 1;
 			min-height: 120px;
 		}
@@ -169,7 +169,7 @@
 		max-height: 120px;
 	}    
 	.swiper_slide_post h4{
-		font-family: 'Open Sans';
+		font-family: $Open_Sans;
 		font-size: 16px;
 		font-style: italic;
 		font-weight: 400;

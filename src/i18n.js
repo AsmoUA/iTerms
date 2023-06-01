@@ -412,7 +412,7 @@ const resources = {
       'footer_payment': 'Оплата',
       'footer_help': 'Довідка',
       'footer_support': 'Підтримка',
-      'footer_pricing': 'Ціноутворення',
+      'footer_pricing': 'Ціна',
       // for Privacy
       'privacy_flexible': 'гнучка цінова політика',
       'privacy_terms': 'Правила та умови',

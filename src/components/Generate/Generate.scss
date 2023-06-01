@@ -104,7 +104,7 @@
 			font-size: 24px;
 			line-height: 120%;
 			text-align: center;
-			color: #1D212A;
+			color: $text-color;
 			margin-bottom: 8px;
 		}
 
@@ -115,7 +115,7 @@
 			font-size: 16px;
 			line-height: 150%;
 			text-align: center;
-			color: #565A65;
+			color: $bkog-paragraph;
 			max-width: 600px;
 			margin: 0 auto;
 		}
@@ -128,7 +128,7 @@
 			font-size: 16px;
 			line-height: 150%;
 			text-align: center;
-			color: #1D212A;
+			color: $text-color;
 			margin-top: 300px;
 		}
 		.h5_med{
@@ -138,7 +138,7 @@
 			font-size: 14px;
 			line-height: 150%;
 			text-align: center;
-			color: #1D212A;
+			color: $text-color;
 		}
 		.h2_lar,
 		.h5_lar{
@@ -289,7 +289,7 @@
 			font-style: normal;
 			font-weight: 300;
 			font-size: 24px;
-			color: #1D212A;
+			color: $text-color;
 		}
 		&_more{
 			padding-top: 1%;
@@ -297,7 +297,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-size: 16px;
-			color: #565A65;
+			color: $bkog-paragraph;
 		}
 		&_detail{
 			display: flex;
@@ -318,7 +318,7 @@
 				font-style: normal;
 				font-weight: 400;
 				font-size: 16px;
-				color: #565A65;
+				color: $bkog-paragraph;
 			}
 		}
 		&_button{
@@ -337,7 +337,7 @@
 }
 
 .main_img_small{
-	background-color: #FFFFFF;
+	background-color: $white-color;
 	border-radius: 8px;
 	display: grid;
 	grid-template-columns: auto auto;
@@ -359,7 +359,7 @@
 			font-style: normal;
 			font-weight: 400;
 			font-size: 16px;
-			color: #1D212A;
+			color: $text-color;
 		}
 	}
 }
@@ -386,7 +386,7 @@
 		position: absolute;
 		z-index: 3;
 		top: 40%;
-		color: white;
+		color: $white-color;
 		max-width: 60%;
 		text-align: center;
 		left: 20%;
@@ -411,7 +411,7 @@
 			font-weight: 400;
 			font-size: 24px;
 			line-height: 120%;
-			color: #FFFFFF;
+			color: $white-color;
 		}
 		h4{
 			font-family: &$Open_Sans;
@@ -588,7 +588,7 @@
 				font-weight: 300;
 				font-size: 48px;
 				line-height: 120%;
-				color: #1D212A;
+				color: $text-color;
 			}		
 			&_aggrements_policy{
 				font-family: $Poppins;
@@ -616,15 +616,15 @@
 					font-weight: 400;
 					font-size: 16px;
 					line-height: 150%;
-					color:white;
+					color:$white-color;
 					position: relative;
 					transition: 0.5s;
 					margin-bottom: 5px;
-					background-color: #8770FF;
+					background-color: $Iterms-button;
 					cursor: pointer;
 					&:hover{
-						background: #8770FF;
-						color: white;
+						background: $Iterms-button;
+						color: $white-color;
 						transition: 0.5s;
 						&::before{
 							display: none;
@@ -642,7 +642,7 @@
 					font-weight: 400;
 					font-size: 16px;
 					line-height: 150%;
-					color: #1D212A;
+					color: $text-color;
 					position: relative;
 					transition: 0.5s;
 					border: none;
@@ -778,7 +778,7 @@
 				font-style: normal;
 				font-weight: 300;
 				font-size: 48px;
-				color: #1D212A;
+				color: $text-color;
 			}
 			&_more{
 				max-width: 411.01px;
@@ -787,7 +787,7 @@
 				font-style: normal;
 				font-weight: 400;
 				font-size: 16px;
-				color: #565A65;
+				color: $bkog-paragraph;
 			}
 			&_button{
 				display: flex;
@@ -831,7 +831,7 @@
 						font-style: normal;
 						font-weight: 400;
 						font-size: 16px;
-						color: #565A65;  
+						color: $bkog-paragraph;  
 				}
 				&_background{
 						width: 20px;
@@ -895,7 +895,7 @@
 				font-size: 24px;
 				line-height: 120%;
 				text-align: center;
-				color: #1D212A;
+				color: $text-color;
 			}
 			.h5_lar{
 				display: block;
@@ -905,7 +905,7 @@
 				font-size: 16px;
 				line-height: 150%;
 				text-align: center;
-				color: #1D212A;
+				color: $text-color;
 			} 
 		}
 		&_background{
@@ -999,7 +999,7 @@
 				font-size: 48px;
 				line-height: 120%;
 				text-align: center;
-				color: #1D212A;
+				color: $text-color;
 			}
 			.h4_large{
 				display: block;
@@ -1007,7 +1007,7 @@
 				font-style: normal;
 				font-weight: 400;
 				text-align: center;
-				color: #565A65;
+				color: $bkog-paragraph;
 			}
 		}
 		&_cardCircle{
@@ -1030,7 +1030,7 @@
 	min-height: 380px;
 	display: grid;
 	grid-template-columns: 30%  30%;
-	background-color: #FFFFFF;
+	background-color: $white-color;
 	border-radius: 8px;
 	justify-content: center;
 	column-gap: 18%;

@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import DetailsBlog from '../DetailsBlog';
+import PriPolBlog from '../Privacy_Policy/PriPolBlog';
 import SwiperPost from './SwiperPost';
-import DetailsSwiper from '../DetailsSwiper';
-import DetailsProtection from '../DetailsProtection';
+import PriPolSwiper from '../Privacy_Policy/PriPolSwiper';
+import PriPolGuarantee from '../Privacy_Policy/PriPolGuarantee';
 import './Generate.scss';
 import HeroImage from '../../assets/assets_generate/HeroImage.webp';
 import Lock from '../../assets/assets_generate/Lock.webp';
@@ -13,7 +13,7 @@ import Cookie from '../../assets/assets_generate/Cookies.webp';
 import LineGray from '../../assets/assets_generate/Line_gray.webp';
 import LineViolet from '../../assets/assets_generate/Line_violet.webp';
 import PaperPlane from '../../assets/assets_generate/Paper_plane.webp';
-import Streamline from '../../assets/assets_generate/Group821.png';
+import Streamline from '../../assets/assets_generate/Streamlines.webp';
 import Circle from '../../assets/assets_generate/check_circle.webp';
 import Lubenda from '../../assets/assets_generate/Lubenda.webp';
 import Privacy from '../../assets/assets_generate/Privacy.webp';
@@ -303,7 +303,7 @@ const Generate = () => {
       </div>
       <div className="main_swiper">
         <p className="main_swiper_solution">Solution</p>
-        <DetailsSwiper />
+        <PriPolSwiper />
       </div>
       <div className="main_cardPricing">
         <div className="main_cardPricing_detail">
@@ -403,7 +403,7 @@ const Generate = () => {
           <p>{t('unlimited_downloads')}</p>
         </div>
       </div>
-      <DetailsProtection />
+      <PriPolGuarantee />
       <div className="main_swiperPost">
         <SwiperPost />
       </div>
@@ -437,8 +437,8 @@ const Generate = () => {
           </button>
         </div>
       </div>
-      <div className="main_detailsblog">
-        <DetailsBlog />
+      <div className="main_PriPolBlog">
+        <PriPolBlog />
       </div>
     </div>
   );
