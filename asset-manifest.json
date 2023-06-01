@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/iTerms/static/css/main.60f74f18.css",
-    "main.js": "/iTerms/static/js/main.b65d7a2c.js",
+    "main.css": "/iTerms/static/css/main.572e50e4.css",
+    "main.js": "/iTerms/static/js/main.d89fad67.js",
     "static/js/787.d0679b17.chunk.js": "/iTerms/static/js/787.d0679b17.chunk.js",
     "static/media/large-background.webp": "/iTerms/static/media/large-background.ff41fea73e5a38186e1d.webp",
     "static/media/Hero_image_backgruund.webp": "/iTerms/static/media/Hero_image_backgruund.a35ce8ef18c84c85bb87.webp",
     "static/media/medium-footer-background.webp": "/iTerms/static/media/medium-footer-background.1d2347bf88ff7215143f.webp",
     "static/media/HeroImage.webp": "/iTerms/static/media/HeroImage.66c34bf3c1f0203f14c5.webp",
-    "static/media/Group821.png": "/iTerms/static/media/Group821.1bd018afa588671ef8d8.png",
-    "static/media/DetailsConditions1.webp": "/iTerms/static/media/DetailsConditions1.3b7947bb58a8990a6e91.webp",
+    "static/media/PriPolAdvant1.webp": "/iTerms/static/media/PriPolAdvant1.3b7947bb58a8990a6e91.webp",
     "static/media/medium-background.webp": "/iTerms/static/media/medium-background.cc269e49ff848376cc4a.webp",
-    "static/media/DetailsConditions2.webp": "/iTerms/static/media/DetailsConditions2.312fe6ec1961ee66b856.webp",
-    "static/media/DetailsConditions3.webp": "/iTerms/static/media/DetailsConditions3.6ce4250e216ba35a0558.webp",
+    "static/media/PriPolAdvant2.webp": "/iTerms/static/media/PriPolAdvant2.312fe6ec1961ee66b856.webp",
+    "static/media/Streamlines.webp": "/iTerms/static/media/Streamlines.f31f987604dfcfa9c008.webp",
+    "static/media/PriPolAdvant3.webp": "/iTerms/static/media/PriPolAdvant3.6ce4250e216ba35a0558.webp",
     "static/media/Text_highlighter.webp": "/iTerms/static/media/Text_highlighter.6010e970fa5c649f452e.webp",
     "static/media/Cards.webp": "/iTerms/static/media/Cards.e9a6f737856f2de1dfad.webp",
     "static/media/Privacy.webp": "/iTerms/static/media/Privacy.94b62c258650165f61ff.webp",
@@ -67,12 +67,12 @@
     "static/media/icon-read-more.webp": "/iTerms/static/media/icon-read-more.c6f941783e7ad66ff2ed.webp",
     "static/media/done_blue.webp": "/iTerms/static/media/done_blue.cd0aa57c78f9dfc242f5.webp",
     "static/media/line.webp": "/iTerms/static/media/line.5700468b39554e8deacf.webp",
-    "main.60f74f18.css.map": "/iTerms/static/css/main.60f74f18.css.map",
-    "main.b65d7a2c.js.map": "/iTerms/static/js/main.b65d7a2c.js.map",
+    "main.572e50e4.css.map": "/iTerms/static/css/main.572e50e4.css.map",
+    "main.d89fad67.js.map": "/iTerms/static/js/main.d89fad67.js.map",
     "787.d0679b17.chunk.js.map": "/iTerms/static/js/787.d0679b17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60f74f18.css",
-    "static/js/main.b65d7a2c.js"
+    "static/css/main.572e50e4.css",
+    "static/js/main.d89fad67.js"
   ]
 }
