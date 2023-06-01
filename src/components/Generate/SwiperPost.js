@@ -9,15 +9,16 @@ const SwiperPost = () => {
   const { t } = useTranslation();
   const [users, setUsers] = useState([]);
 
-  const renderStars = (rating, userId) => {
+  const renderStars = (name) => {
     const stars = [];
+    const surName = name.split(' ');
+    const starRating = surName[0].length-1;
     for (let i = 1; i <= 5; i++) {
-      const starClass = i <= rating ? 'star filled' : 'star';
+      const starClass = i <= starRating ? 'star filled' : 'star';
       stars.push(
         <span
           key={i}
           className={starClass}
-          onClick={() => handleStarClick(userId, i)}
         >
           &#9733;
         </span>,
@@ -47,17 +48,6 @@ const SwiperPost = () => {
 
     getUsersData();
   }, []);
-
-  const handleStarClick = (userId, value) => {
-    setUsers((prevUsers) => {
-      return prevUsers.map((user) => {
-        if (user.id === userId) {
-          return { ...user, rating: value };
-        }
-        return user;
-      });
-    });
-  };
 
   return (
     <section className="section_swiper">
@@ -105,8 +95,7 @@ const SwiperPost = () => {
                   <h4>{user.review}</h4>
                   <div>
                     <div className="stars">
-                      {renderStars(user.rating, user.id)}
-                      <p>{user.rating}</p>
+                      <p>{user.name.split(' ')[0].length - 1}{renderStars(user.name)}</p>
                     </div>
                   </div>
                 </div>
