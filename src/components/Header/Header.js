@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Header.scss';
 import Generate from '../Generate/Generate';
-import PrivPol from '../Privacy_Policy/PrivPol';
+import Privacy_Policy from '../Privacy_Policy/Privacy_Policy';
 import Pricing from '../Pricing/Pricing';
 import Blog from '../Blog/Blog';
 import BlogDetail from '../Blog/BlogDetail';
@@ -132,7 +132,7 @@ const Header = () => {
       </div>
       <Routes>
         <Route path="/" element={<Generate />} />
-        <Route path="/privacy" element={<PrivPol />} />
+        <Route path="/privacy" element={<Privacy_Policy />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetail navigate = {navigate} />}/>

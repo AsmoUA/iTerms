@@ -4,11 +4,11 @@ import PriPolOnline from './PriPolOnline';
 import DetailsSwiper from './PriPolSwiper';
 import PriPolGuarantee from './PriPolGuarantee';
 import PriPolBlog from './PriPolBlog';
-import './PrivPol.scss';
+import './Privacy_Policy.scss';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-const PrivPol = () => {
+const Privacy_Policy = () => {
 
   const { t } = useTranslation();
 
@@ -46,4 +46,4 @@ const PrivPol = () => {
   );
 };
 
-export default PrivPol;
+export default Privacy_Policy;

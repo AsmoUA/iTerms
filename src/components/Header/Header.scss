@@ -108,7 +108,7 @@
 		.header_navigate_menu_switcher {
 			order: 1;
 			margin-left: 44px;
-			padding-bottom: 47px;
+			padding-bottom: 20vh;
 
 			@include respond-to(medium){padding-bottom: 27px;}
 

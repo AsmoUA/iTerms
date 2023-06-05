@@ -275,6 +275,7 @@
 
 	&_button{
 		display: flex;
+		flex-wrap: wrap;
 		gap: 10px;
 		align-items: center;
 		justify-content: center;
@@ -282,12 +283,14 @@
 
 		&_generate{
 			@include generate;
+			// padding: 12px 20px;
 				border:none;
 				font-family: $Poppins;
 		}
 
 		&_learn{
 			@include learn;
+			padding-right: 54px;
 				border: none;
 				font-family: $Poppins;
 		}
@@ -377,6 +380,7 @@
 
 		&_button{
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: center;
 			gap: 5%;
 			padding-top: 3%;
@@ -387,6 +391,7 @@
 
 			&_learn{
 				@include learn;
+				padding-right: 54px;
 			}
 		}
 	}
