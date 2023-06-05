@@ -110,11 +110,9 @@ const Generate = () => {
         </div>
       </div>
       <div className="main_tutorial_small">
-        <div className="main_tutorial_small_background">
-          <img src={Marker} />
-        </div>
         <h5>AI-Powered</h5>
         <h1>{t('generate-tutorial-text')}</h1>
+        <img src={Marker} />
         <div className="main_tutorial_small_button">
           <button
             className="main_tutorial_small_button_generate"

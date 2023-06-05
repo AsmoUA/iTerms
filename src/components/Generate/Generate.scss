@@ -221,22 +221,18 @@
 .main_tutorial_small{
 	position: relative;
 
-	&_background{
-		left: 0%;
-		bottom: 30%;
-		position: absolute;
-		width: 101%;
-
-		@include respond-to(medium) {
-			left: 19%;
-			bottom: 13%;
-			width: 63%;
-		}
-
 		img{
-			width: 100%;
+			left: 3%;
+			bottom: 40%;
+			position: absolute;
+			width: 94%;
+
+			@include respond-to(medium) {
+				left: 19%;
+				bottom: 13%;
+				width: 63%;
+			}
 		}
-	}
 
 	h5{
 		font-family: $Poppins;
