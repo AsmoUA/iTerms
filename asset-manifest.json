@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/iTerms/static/css/main.572e50e4.css",
-    "main.js": "/iTerms/static/js/main.d89fad67.js",
+    "main.css": "/iTerms/static/css/main.52e5e04b.css",
+    "main.js": "/iTerms/static/js/main.4cd78c2a.js",
     "static/js/787.d0679b17.chunk.js": "/iTerms/static/js/787.d0679b17.chunk.js",
     "static/media/large-background.webp": "/iTerms/static/media/large-background.ff41fea73e5a38186e1d.webp",
     "static/media/Hero_image_backgruund.webp": "/iTerms/static/media/Hero_image_backgruund.a35ce8ef18c84c85bb87.webp",
@@ -67,12 +67,12 @@
     "static/media/icon-read-more.webp": "/iTerms/static/media/icon-read-more.c6f941783e7ad66ff2ed.webp",
     "static/media/done_blue.webp": "/iTerms/static/media/done_blue.cd0aa57c78f9dfc242f5.webp",
     "static/media/line.webp": "/iTerms/static/media/line.5700468b39554e8deacf.webp",
-    "main.572e50e4.css.map": "/iTerms/static/css/main.572e50e4.css.map",
-    "main.d89fad67.js.map": "/iTerms/static/js/main.d89fad67.js.map",
+    "main.52e5e04b.css.map": "/iTerms/static/css/main.52e5e04b.css.map",
+    "main.4cd78c2a.js.map": "/iTerms/static/js/main.4cd78c2a.js.map",
     "787.d0679b17.chunk.js.map": "/iTerms/static/js/787.d0679b17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.572e50e4.css",
-    "static/js/main.d89fad67.js"
+    "static/css/main.52e5e04b.css",
+    "static/js/main.4cd78c2a.js"
   ]
 }
