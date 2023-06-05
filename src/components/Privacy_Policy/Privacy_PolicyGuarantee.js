@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './PriPolGuarantee.scss';
+import './Privacy_PolicyGuarantee.scss';
 import smallBackground from '../../assets/small-background.webp';
 import mediumBackground from '../../assets/medium-background.webp';
 import largeBackground from '../../assets/large-background.webp';
@@ -8,7 +8,7 @@ import img2 from '../../assets/Businesses.webp';
 import img3 from '../../assets/CompliantPageviews.webp';
 import { useTranslation } from 'react-i18next';
 
-const PriPolGuarantee = () => {
+const Privacy_PolicyGuarantee = () => {
   const { t } = useTranslation();
   const [background, setBackground] = useState('');
 
@@ -64,4 +64,4 @@ const PriPolGuarantee = () => {
   );
 };
 
-export default PriPolGuarantee;
+export default Privacy_PolicyGuarantee;

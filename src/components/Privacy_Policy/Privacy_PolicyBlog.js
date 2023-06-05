@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PriPolBlog.scss';
+import './Privacy_PolicyBlog.scss';
 import { useTranslation } from 'react-i18next';
 
 const ExpandingInfo = ({ title, p1, h51, p2, h52, p3 }) => {
@@ -24,7 +24,7 @@ const ExpandingInfo = ({ title, p1, h51, p2, h52, p3 }) => {
   );
 };
 
-const PriPolBlog = () => {
+const Privacy_PolicyBlog = () => {
   const data = [
     {
       title: 'What is a Privacy Policy?',
@@ -241,5 +241,5 @@ const PriPolBlog = () => {
   );
 };
 
-export default PriPolBlog;
+export default Privacy_PolicyBlog;
 

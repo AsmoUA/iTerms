@@ -6,8 +6,8 @@ import lineDone from '../../assets/assets_prising/line.webp';
 import doneBlue from '../../assets/assets_prising/done_blue.webp';
 import info from '../../assets/assets_prising/inform.webp';
 import creditCard from '../../assets/assets_prising/credit_card.webp';
-import PriPolGuarantee from '../Privacy_Policy/PriPolGuarantee';
-import PriPolBlog from '../Privacy_Policy/PriPolBlog';
+import Privacy_PolicyGuarantee from '../Privacy_Policy/Privacy_PolicyGuarantee';
+import Privacy_PolicyBlog from '../Privacy_Policy/Privacy_PolicyBlog';
 import { useTranslation } from 'react-i18next';
 
 const Pricing = () => {
@@ -276,8 +276,8 @@ const Pricing = () => {
           </table>
         </div>
       </div>
-      <PriPolGuarantee />
-      <PriPolBlog/>
+      <Privacy_PolicyGuarantee />
+      <Privacy_PolicyBlog/>
     </>
   );
 };

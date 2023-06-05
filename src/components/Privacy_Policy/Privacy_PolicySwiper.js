@@ -8,13 +8,13 @@ import img4 from '../../assets/Eula_1.webp';
 import img5 from '../../assets/Disclaimer.webp';
 import img6 from '../../assets/Refund-Policy.webp';
 import 'swiper/swiper-bundle.min.css';
-import './PriPolSwiper.scss';
+import './Privacy_PolicySwiper.scss';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const PriPolSwiper = () => {
+const Privacy_PolicySwiper = () => {
 
   const { t } = useTranslation();
 
@@ -117,4 +117,4 @@ const PriPolSwiper = () => {
   );
 };
 
-export default PriPolSwiper;
+export default Privacy_PolicySwiper;

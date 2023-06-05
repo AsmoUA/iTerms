@@ -3,9 +3,9 @@ import img1 from '../../assets/PriPolAdvant1.webp';
 import img2 from '../../assets/PriPolAdvant2.webp';
 import img3 from '../../assets/PriPolAdvant3.webp';
 import { useTranslation } from 'react-i18next';
-import './PriPolAdvant.scss';
+import './Privacy_PolicyAdvant.scss';
 
-const PriPolAdvant = () => {
+const Privacy_PolicyAdvant = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -46,4 +46,4 @@ const PriPolAdvant = () => {
   );
 };
 
-export default PriPolAdvant;
+export default Privacy_PolicyAdvant;

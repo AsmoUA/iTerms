@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import PriPolBlog from '../Privacy_Policy/PriPolBlog';
+import Privacy_PolicyBlog from '../Privacy_Policy/Privacy_PolicyBlog';
 import SwiperPost from './SwiperPost';
-import PriPolSwiper from '../Privacy_Policy/PriPolSwiper';
-import PriPolGuarantee from '../Privacy_Policy/PriPolGuarantee';
+import Privacy_PolicySwiper from '../Privacy_Policy/Privacy_PolicySwiper';
+import Privacy_PolicyGuarantee from '../Privacy_Policy/Privacy_PolicyGuarantee';
 import './Generate.scss';
 import HeroImage from '../../assets/assets_generate/HeroImage.webp';
 import Lock from '../../assets/assets_generate/Lock.webp';
@@ -303,7 +303,7 @@ const Generate = () => {
       </div>
       <div className="main_swiper">
         <p className="main_swiper_solution">Solution</p>
-        <PriPolSwiper />
+        <Privacy_PolicySwiper />
       </div>
       <div className="main_cardPricing">
         <div className="main_cardPricing_detail">
@@ -403,7 +403,7 @@ const Generate = () => {
           <p>{t('unlimited_downloads')}</p>
         </div>
       </div>
-      <PriPolGuarantee />
+      <Privacy_PolicyGuarantee />
       <div className="main_swiperPost">
         <SwiperPost />
       </div>
@@ -437,8 +437,8 @@ const Generate = () => {
           </button>
         </div>
       </div>
-      <div className="main_PriPolBlog">
-        <PriPolBlog />
+      <div className="main_Privacy_PolicyBlog">
+        <Privacy_PolicyBlog />
       </div>
     </div>
   );

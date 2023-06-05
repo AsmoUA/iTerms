@@ -15,6 +15,7 @@
 @mixin learn{
   display: block;
   padding: 12px 0px 12px 54px;
+  height: 48px;
   background: none;
   font-style: normal;
   font-weight: 400;
@@ -47,6 +48,22 @@
     top: 19px;
     left: 155px;
   }
+  &:hover{
+		background: $Iterms-button;
+		color: $white-color;
+    height: 48px;
+		transition: 0.5s;
+    border-radius: 8px;
+    padding: 0 40px;
+
+		&::before{
+			display: none;
+		}
+
+		&::after{
+			display: none;
+		}
+	}
 }
 
 @mixin generate{
@@ -64,6 +81,15 @@
   background: #8770FF;
   color: #fff;
   cursor: pointer;
+  &:hover {
+    border: 1px solid $Iterms-button;
+    color: $text-color;
+    background: none;
+    box-shadow: 
+      0px 38px 56px rgba(191, 204, 225, 0.39), 
+      0px 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 
+      0px 15.8955px 0px rgba(191, 204, 225, 0.0372931);
+  }
 }
 
 

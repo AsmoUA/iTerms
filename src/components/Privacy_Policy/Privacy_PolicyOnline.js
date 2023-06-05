@@ -2,9 +2,9 @@ import React from 'react';
 import done from '../../assets/Done.webp';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './PriPolOnline.scss';
+import './Privacy_PolicyOnline.scss';
 
-const PriPolOnline = () => {
+const Privacy_PolicyOnline = () => {
 
   const { t } = useTranslation();
   
@@ -52,4 +52,4 @@ const PriPolOnline = () => {
   );
 };
 
-export default PriPolOnline;
+export default Privacy_PolicyOnline;

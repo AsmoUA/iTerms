@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import PriPolAdvant from './PriPolAdvant';
-import PriPolOnline from './PriPolOnline';
-import DetailsSwiper from './PriPolSwiper';
-import PriPolGuarantee from './PriPolGuarantee';
-import PriPolBlog from './PriPolBlog';
+import Privacy_PolicyAdvant from './Privacy_PolicyAdvant';
+import Privacy_PolicyOnline from './Privacy_PolicyOnline';
+import DetailsSwiper from './Privacy_PolicySwiper';
+import Privacy_PolicyGuarantee from './Privacy_PolicyGuarantee';
+import Privacy_PolicyBlog from './Privacy_PolicyBlog';
 import './Privacy_Policy.scss';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -36,11 +36,11 @@ const Privacy_Policy = () => {
             {t('privacy_learn')}
           </Link>
         </div>
-        <PriPolAdvant/>
-        <PriPolOnline/>
+        <Privacy_PolicyAdvant/>
+        <Privacy_PolicyOnline/>
         <DetailsSwiper/>
-        <PriPolGuarantee/>
-        <PriPolBlog/>
+        <Privacy_PolicyGuarantee/>
+        <Privacy_PolicyBlog/>
       </div>
     </>
   );
