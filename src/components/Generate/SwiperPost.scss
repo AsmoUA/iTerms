@@ -114,8 +114,7 @@
 	}
 
 	.swiperPost_background{
-		margin: 0 90px;
-		margin-top:100px;
+		margin:100px 15px 0;
 		height: 440px;
 		background-color: #F9FAFC;
 		border-radius: 8px;
@@ -135,14 +134,16 @@
 	}
 
 	.swiper_slide_posts {
+		display: flex;
+		flex-direction: column;
 		align-items: flex-start;
-		max-height: 120px;
 	}
 
 	.swiper_slide_post{
 		.stars {
 			display: flex;
 			align-items: center;
+			margin-bottom: 48px;
 
 			.star {
 				font-size: 21px;
@@ -189,14 +190,13 @@
 			font-size: 16px;
 			line-height: 150%;
 			color: $text-color;
-			min-height: 120px;
 		}
 	}
 
 	.swiper_slide_main{
 		display: flex;
 		flex-direction: row;
-		max-height: 120px;
+		margin-bottom: 19px;
 	}    
 
 	.swiper_slide_post h4{
@@ -207,11 +207,6 @@
 		line-height: 150%;
 		text-align: left; 
 		margin-bottom: 8px;
-	}
-
-	.swiper_slide_posts{
-		display: flex;
-		flex-direction: column;
 	}
 
 	.swiperPost_title{
@@ -237,7 +232,7 @@
 
 	.swiperPost_background{
 		@include respond-to(medium) {
-			margin-bottom: 180px;
+			margin: 0 45px 180px;
 
 			.swiper_body{
 				padding: 0;
@@ -248,7 +243,7 @@
 	.swiperPost_background {
 		@include respond-to(large) {
 			max-width: 960px;
-			margin-bottom: 180px;
+			margin: 0 90px 180px;
 
 			.swiperPost_body {
 				max-width: 800px;
