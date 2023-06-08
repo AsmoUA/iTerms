@@ -2,6 +2,7 @@
 @import '../../globals/globals.scss';
 
 .details_protection_background{
+	background-image: var(--backgroundImage);
 	height: 810px;
 	max-width: 100%;
 	background-size: cover;
@@ -56,6 +57,7 @@
 
 	.details_protection_flex{
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -68,7 +70,7 @@
 	}
 
 	@include respond-to(medium) {
-		height: 600px;
+		height: auto;
 		max-width: 100%;
 		background-repeat: no-repeat;
 
@@ -92,7 +94,8 @@
 		.details_protection_flex{
 			flex-direction: row;
 			margin-top: 60px;
-			justify-content: space-between;
+			justify-content: center;
+			gap: 7%;
 
 			h2{
 				font-size: 38px;

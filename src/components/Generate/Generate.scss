@@ -493,7 +493,14 @@
 
 .main_swiperPost{
 	position: relative;
-	left:2%;
+	margin: 14px 0 185px;
+	@include respond-to(medium){
+		margin: 22px 0 130px;
+	}
+
+	@include respond-to(large){
+		margin: 70px 0 264px;
+	}
 }
 
 .main_post {
@@ -995,6 +1002,8 @@
 			display: block;
 			position:absolute;
 			top: -125px;
+			left: 50%;
+			transform: translateX(-50%);
 			font-family: $Poppins;
 			font-style: normal;
 			font-weight: 300;
@@ -1251,12 +1260,6 @@
 		line-height: 150%;
 		color: $text-color;
 		text-align: center;
-	}
-}
-
-.main_swiperPost{
-	@include respond-to(large){
-		left:10%;
 	}
 }
 

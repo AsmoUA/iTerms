@@ -15,7 +15,7 @@ const Privacy_PolicyGuarantee = () => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width < 768) {
+      if (width < 512) {
         setBackground(smallBackground);
       } 
       else if (width < 1920) {
@@ -33,7 +33,7 @@ const Privacy_PolicyGuarantee = () => {
   
   return (
     <>
-      <div className="details_protection_background" style={{ backgroundImage: `url(${background})` }}>
+      <div className="details_protection_background" style={{ '--backgroundImage': `url(${background})` }}>
         <div className="text_block">
           <h5 className="h5_medium">{t('privacy_protection_trust')}</h5>
           <h5 className="h5_large">{t('privacy_protection_provisions')}</h5>

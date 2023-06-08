@@ -4,9 +4,14 @@
 .section_swiper {
 	.swiper-button-prev,
 	.swiper-button-next {
-		position: absolute !important;
-		top: 465px !important;
+		top: 487px !important;
 		color: $text-color !important;
+		@include respond-to(medium){
+			top: 367px !important;
+		}
+		@include respond-to(large){
+			top: 367px !important;
+		}
 	}
 
 	.swiper-button-next:after, 
@@ -20,8 +25,16 @@
 
 	.swiper-button{
 		position: absolute !important;
-		width: 120px !important;
-		right: 120px;
+		width: 85px !important;
+		right: 50px;
+		@include respond-to(medium){
+			width: 120px !important;
+			right: 120px;
+		}
+		@include respond-to(large){
+			width: 120px !important;
+			right: 120px;
+		}
 	}
 
 	.swiper,.swiper-container{
@@ -68,11 +81,21 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			margin: 0 0 120px 4%;
+			gap: 8px;
 
 			@include respond-to (medium) {
-				justify-content: center;
+				justify-content: space-between;
 				flex-direction: row;
-				max-width: 100%;
+				max-width: 88%;
+				margin-left: 6%;
+				gap: 28%;
+			}
+			@include respond-to (large) {
+				flex-direction: row;
+				max-width:45%;
+				margin-left: 22%;
+				margin-bottom: 204px;
 			}
 		}
 
@@ -80,9 +103,15 @@
 			font-size: 24px;
 
 			@include respond-to (medium) {
+				width: 319px;
 				font-weight: 300;
 				font-size: 48px;
 				line-height: 120%;
+			}
+
+			@include respond-to(large) {
+				width: 33%;
+				font-size: 32px;
 			}
 		}
 
@@ -98,7 +127,15 @@
 			text-align: inherit;
 			display:flex;
 			z-index: 5;
-			padding-top: 80px;
+			margin: 54px 0 0 4%;
+
+			@include respond-to(medium){
+				margin-left: 6%;
+			}
+
+			@include respond-to(large){
+				margin-left: 22%;
+			}
 		}
 
 		.p_postlarge span{
@@ -109,21 +146,59 @@
 			width: 194px;
 			height: 214px;
 			position: absolute;
+			top: 0;
 			z-index: -1;
+			left: 4%;
+			@include respond-to(medium){
+				left: 6%;
+			}
+
+			@include respond-to(large){
+				left: 16%;
+			}
 		}
 	}
 
 	.swiperPost_background{
-		margin:100px 15px 0;
+		margin:0 auto;
 		height: 440px;
 		background-color: #F9FAFC;
 		border-radius: 8px;
+		width: 92%;
+		box-shadow: 0px 38px 56px rgba(191, 204, 225, 0.39), 
+			0px 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 
+			0px 15.8955px 0px rgba(191, 204, 225, 0.0372931);
+
+		@include respond-to(medium) {
+			width: 89%;
+			height: 290px;
+
+			.swiper_body{
+				padding: 0;
+			}
+		}
+
+		@include respond-to(large) {
+			width: 825px;
+			height: 290px;
+		}
 	}
+	
 
 	.swiperPost_body{
 		position: relative;
-		top: -90px;
-		right: -50px;
+		margin: 0 auto;
+		top: -100px;
+		right: -21px;
+		@include respond-to(medium){
+			top: -107px;
+		  right: -50px;
+		}
+
+		@include respond-to(large){
+			top: -100px;
+			right: -50px;
+		}
 	}
 
 	.swiper_slide_image img{
@@ -166,12 +241,23 @@
 	}
 		
 	.swiper_slidePost{
-		padding: 34px 24px 20px 24px;
-		max-width: 430px;
-		max-height: 370px;
+		padding: 5px 24px 20px 24px;
+		width: 255px;
+		height: 444px;
 		background-color: $white-color;
 		border-radius: 8px;
 		position: relative;
+		box-shadow: 0px 38px 56px rgba(191, 204, 225, 0.39), 0px 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0px 15.8955px 0px rgba(191, 204, 225, 0.0372931);
+
+		@include respond-to(medium){
+			width: 540px;
+			height: 338px;
+		}
+
+		@include respond-to(large){
+			width: 540px;
+			height: 338px;
+		}
 
 		h5{
 			font-family: $Poppins;
@@ -207,13 +293,14 @@
 		line-height: 150%;
 		text-align: left; 
 		margin-bottom: 8px;
+		max-height: 237px;
+    overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	.swiperPost_title{
 		@include respond-to(medium) {
 			max-width: 89%;
-			margin: 0 auto;
-
 			h5{
 				font-size: 18px;
 			}
@@ -230,44 +317,10 @@
 		}
 	}
 
-	.swiperPost_background{
-		@include respond-to(medium) {
-			margin: 0 45px 180px;
-
-			.swiper_body{
-				padding: 0;
-			}
-		}
-	}
-
-	.swiperPost_background {
-		@include respond-to(large) {
-			max-width: 960px;
-			margin: 0 90px 180px;
-
-			.swiperPost_body {
-				max-width: 800px;
-				margin: 0 auto;
-			}
-		}
-	}
-
 	.swiperPost_title {
 		@include respond-to(large) {
-			.description {
-				display: flex;
-				flex-direction: row;
-				max-width:45%;
-				margin: 0 0 60px 4%;
-
-				.h2_postlarge {
-					width: 33%;
-					font-size: 32px;
-				}
-				
-				.p_postlarge{
-					width: 33%;
-				}
+			.p_postlarge{
+				width: 33%;
 			}
 		}
 	}
