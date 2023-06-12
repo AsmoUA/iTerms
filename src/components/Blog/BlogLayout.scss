@@ -54,6 +54,10 @@
         background: none;
         margin-bottom: 24px;
       }
+      &:hover{
+        border: 1px solid $Iterms-button;
+        box-shadow:  -8px 8px 16px #d9d9d9;
+      }
     }
 
     ul {
@@ -79,16 +83,29 @@
 
       li {
         margin-bottom: 8px;
+        background: linear-gradient(478deg, $Iterms-button, #dfe3e9, #dfe3e9, $Iterms-button);
+        border-radius: 8px;
+        padding: 8px 0;
 
         @include respond-to(medium) {
           float: left;
           border-radius: 8px;
           background: linear-gradient(225deg, #f0f0f0, #cacaca);
+          padding: 0;
         }
 
         @include respond-to(large) {
           background: none;
           margin-bottom: 8px;
+          padding: 0;
+        }
+
+        &:active{
+          background: none;
+        }
+        &:hover{
+          border: 1px solid $Iterms-button;
+          box-shadow:  -8px 8px 16px #d9d9d9;
         }
 
         .link_category {
@@ -101,19 +118,18 @@
           text-decoration: none;
           padding: 2px;
           border-radius: 8px;
-          background: linear-gradient(225deg, #f0f0f0, #cacaca);
 
           @include respond-to(medium) {
             display: block;
             text-align: center;
             font-size: 12px;
             padding: 8px;
-            background: none
+            background: none;
           }
 
           @include respond-to(large) {
             font-size: 16px;
-            background: none
+            background: none;
           }
         }
 

@@ -98,6 +98,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #B6BFD9;
+    text-align: center;
 
     @include respond-to(medium) {
       font-size: 16px;
