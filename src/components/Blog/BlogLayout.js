@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation,useNavigate  } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate  } from 'react-router-dom';
 import data from '../../data.json';
 import './BlogLayout.scss';
 import { useTranslation } from 'react-i18next';
@@ -21,14 +21,19 @@ function BlogLayout({ children }) {
     return queryParams.get('category') === category;
   };
 
+  const getLink = (category) => {
+    navigate(`/blog?category=${category}`);
+  };
+
   return (
     <div className="blog_layout">
       <div className="sidebar">
         <h2 onClick={()=>navigate('/blog')}>{t('categories')}</h2>
         <ul className="categories">
           {categories.map((category) => (
-            <li key={category}>
+            <li key={category} onClick={()=>getLink(category)}>
               <NavLink
+                id={category}
                 to={`/blog?category=${category}`}
                 className={isActive(category) ? 'menu_link_active' : 'link_category'}>
                 {category} ({data.filter((post) => post.category === category).length})
